@@ -136,4 +136,50 @@
 
 
   
-	
+/*Scripts para modal y PayPal -->*/
+
+   // Abrir y cerrar el modal
+   const modal = document.getElementById('paymentModal');
+   const openModalBtn = document.getElementById('openModal');
+   const closeModalSpan = document.querySelector('.modal-content .close');
+
+   openModalBtn.addEventListener('click', function(e) {
+	 e.preventDefault();
+	 modal.style.display = 'block';
+   });
+
+   closeModalSpan.addEventListener('click', function() {
+	 modal.style.display = 'none';
+   });
+
+   window.addEventListener('click', function(event) {
+	 if (event.target === modal) {
+	   modal.style.display = 'none';
+	 }
+   });
+
+   // Configuración e integración de PayPal Smart Payment Buttons
+   paypal.Buttons({
+	 createOrder: function(data, actions) {
+	   return actions.order.create({
+		 purchase_units: [{
+		   amount: {
+			 value: '49.90' // Ajusta el monto según necesites
+		   }
+		 }]
+	   });
+	 },
+	 onApprove: function(data, actions) {
+	   return actions.order.capture().then(function(details) {
+		 alert('Pago completado por ' + details.payer.name.given_name);
+		 modal.style.display = 'none';
+		 // Puedes redirigir o realizar otras acciones aquí
+	   });
+	 },
+	 onError: function (err) {
+	   console.error(err);
+	   alert('Ocurrió un error durante el pago.');
+	 }
+   }).render('#paypal-button-container');
+
+	   
