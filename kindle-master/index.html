@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Kindle : Home</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/green-theme.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+
+    <!-- Open Sans for body font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+    <!-- Lato for Title -->
+  	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+
+	<!-- Carga el SDK de PayPal en modo Sandbox (reemplaza TU_CLIENT_ID_SANDBOX por tu Client ID real) -->
+	<script src="https://www.paypal.com/sdk/js?client-id=AfQRmA7MCVErQkpvuk78w2WcKDc3ElE4HuCMMEjJ_wqkxm3Hj0p8kizYlfXpla9DrKLGrhFK7d24tJzt&currency=USD"></script>
+ 
+ 
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+   	
+  	<!-- Start Header -->
+	  <header id="mu-header" class="" role="banner">
+		<div class="container">
+			<nav class="navbar navbar-default mu-navbar">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+	
+						<!-- Text Logo -->
+						<a class="navbar-brand" href="index.html"><i class="fa fa-book" aria-hidden="true"></i> Kindle</a>
+	
+						<!-- Image Logo -->
+						<!-- <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"></a> -->
+					</div>
+	
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav mu-menu navbar-right">
+							<li><a href="#">INICIO</a></li>
+							<li><a href="#mu-book-overview">DESCRIPCIÓN</a></li>
+							<li><a href="#mu-author">AUTOR</a></li>
+							<li><a href="#mu-pricing">PRECIO</a></li>
+							<li><a href="#mu-testimonials">TESTIMONIOS</a></li>
+							<li><a href="#mu-contact">CONTACTO</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+		</div>
+	</header>
+	<!-- End Header -->
+
+	<!-- Start Featured Slider -->
+
+	 
+	<section id="mu-hero">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-6 col-sm-6 col-sm-push-6">
+			  <div class="mu-hero-right">
+				<img src="assets/images/ebook.png" alt="Imagen del eBook">
+			  </div>
+			</div>
+			<div class="col-md-6 col-sm-6 col-sm-pull-6">
+			  <div class="mu-hero-left">
+				<h1>Descubre "La Fórmula para Emprender"</h1>
+				<p>Transforma tu idea en un negocio exitoso con las estrategias y consejos prácticos de Daniel Bonifaz. Aprende a emprender con éxito paso a paso y alcanza tus metas.</p>
+				<!-- Botón que abre el modal -->
+				<a href="#" id="openModal" class="mu-primary-btn">Comprar ahora</a>
+				<span>*Disponible en PDF, ePUB, Mobi & Kindle.</span>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+
+	  <!-- Modal personalizado -->
+  <div id="paymentModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 style="font-family: 'Lato', sans-serif;">Completa tu pago</h2>
+      <!-- Contenedor para el botón de PayPal -->
+      <div id="paypal-button-container"></div>
+      <!-- Sección para contacto vía WhatsApp -->
+      <div class="modal-buttons">
+        <p>¿Tienes dudas? Contáctanos vía WhatsApp:</p>
+        <!-- Asegúrate de reemplazar el número y mensaje por los tuyos (sin el símbolo +) -->
+        <a href="https://wa.me/51923433973?text=Hola,%20estoy%20interesado%20en%20tu%20producto" target="_blank" class="whatsapp-btn">
+          Contactar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+	
+	<!-- End Featured Slider -->
+	
+	<!-- Start main content -->
+		
+	<main role="main">
+
+		<!-- Start Counter -->
+		<section id="mu-counter">
+			<div class="container">
+			  <div class="row">
+				<div class="col-md-12">
+				  <div class="mu-counter-area">
+					<div class="mu-counter-block">
+					  <div class="row">
+		  
+						<!-- Start Single Counter -->
+						<div class="col-md-3 col-sm-6">
+						  <div class="mu-single-counter">
+							<i class="fa fa-files-o" aria-hidden="true"></i>
+							<div class="counter-value" data-count="232">0</div>
+							<h5 class="mu-counter-name">Páginas Totales</h5>
+						  </div>
+						</div>
+						<!-- / Single Counter -->
+		  
+						<!-- Start Single Counter -->
+						<div class="col-md-3 col-sm-6">
+						  <div class="mu-single-counter">
+							<i class="fa fa-file-text-o" aria-hidden="true"></i>
+							<div class="counter-value" data-count="12">0</div>
+							<h5 class="mu-counter-name">Capítulos</h5>
+						  </div>
+						</div>
+						<!-- / Single Counter -->
+		  
+						<!-- Start Single Counter -->
+						<div class="col-md-3 col-sm-6">
+						  <div class="mu-single-counter">
+							<i class="fa fa-users" aria-hidden="true"></i>
+							<div class="counter-value" data-count="1250">0</div>
+							<h5 class="mu-counter-name">Lectores Activos</h5>
+						  </div>
+						</div>
+						<!-- / Single Counter -->
+		  
+						<!-- Start Single Counter -->
+						<div class="col-md-3 col-sm-6">
+						  <div class="mu-single-counter">
+							<i class="fa fa-trophy" aria-hidden="true"></i>
+							<div class="counter-value" data-count="0">0</div>
+							<h5 class="mu-counter-name">Premios</h5>
+						  </div>
+						</div>
+						<!-- / Single Counter -->
+		  
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		<!-- End Counter -->
+
+		<!-- Start Book Overview -->
+		<section id="mu-book-overview">
+			<div class="container">
+			  <div class="row">
+				<div class="col-md-12">
+				  <div class="mu-book-overview-area">
+		  
+					<div class="mu-heading-area">
+					  <h2 class="mu-heading-title">Descripción del Libro</h2>
+					  <span class="mu-header-dot"></span>
+					  <p>
+						Descubre el mapa que te guiará a través de los desafíos y triunfos en tu camino como emprendedor. 
+						Con estrategias probadas, consejos prácticos y anécdotas inspiradoras, "La Fórmula para Emprender" es una guía paso a paso para iniciar, organizar y hacer crecer tu negocio de manera sostenible.
+					  </p>
+					</div>
+		  
+					<!-- Start Book Overview Content -->
+					<div class="mu-book-overview-content">
+					  <div class="row">
+		  
+						<!-- Book Overview Single Content -->
+						<div class="col-md-3 col-sm-6">
+						  <div class="mu-book-overview-single">
+							<span class="mu-book-overview-icon-box">
+							  <i class="fa fa-map-o" aria-hidden="true"></i>
+							</span>
+							<h4>Capítulo 1: El Mapa del Emprendedor</h4>
+							<p>
+							  Conoce la visión global para trazar tu camino emprendedor y definir metas claras.
+							</p>
+						  </div>
+						</div>
+						<!-- / Book Overview Single Content -->
+		  
+						<!-- Book Overview Single Content -->
+						<div class="col-md-3 col-sm-6">
+						  <div class="mu-book-overview-single">
+							<span class="mu-book-overview-icon-box">
+							  <i class="fa fa-search" aria-hidden="true"></i>
+							</span>
+							<h4>Capítulo 2: Identificar Oportunidades</h4>
+							<p>
+							  Aprende a detectar nichos y oportunidades de negocio en un mercado competitivo.
+							</p>
+						  </div>
+						</div>
+						<!-- / Book Overview Single Content -->
+		  
+						<!-- Book Overview Single Content -->
+						<div class="col-md-3 col-sm-6">
+						  <div class="mu-book-overview-single">
+							<span class="mu-book-overview-icon-box">
+							  <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+							</span>
+							<h4>Capítulo 3: Superar Obstáculos</h4>
+							<p>
+							  Estrategias para enfrentar y aprender de los retos y fracasos comunes en el emprendimiento.
+							</p>
+						  </div>
+						</div>
+						<!-- / Book Overview Single Content -->
+		  
+						<!-- Book Overview Single Content -->
+						<div class="col-md-3 col-sm-6">
+						  <div class="mu-book-overview-single">
+							<span class="mu-book-overview-icon-box">
+							  <i class="fa fa-cogs" aria-hidden="true"></i>
+							</span>
+							<h4>Capítulo 4: Sistemas y Procesos</h4>
+							<p>
+							  Implementa métodos efectivos para organizar tu negocio y potenciar su escalabilidad.
+							</p>
+						  </div>
+						</div>
+						<!-- / Book Overview Single Content -->
+		  
+						<!-- Book Overview Single Content -->
+						<div class="col-md-3 col-sm-6">
+						  <div class="mu-book-overview-single">
+							<span class="mu-book-overview-icon-box">
+							  <i class="fa fa-line-chart" aria-hidden="true"></i>
+							</span>
+							<h4>Capítulo 5: Finanzas Sólidas</h4>
+							<p>
+							  Domina la gestión financiera para lograr rentabilidad y un crecimiento sostenible.
+							</p>
+						  </div>
+						</div>
+						<!-- / Book Overview Single Content -->
+		  
+						<!-- Book Overview Single Content -->
+						<div class="col-md-3 col-sm-6">
+						  <div class="mu-book-overview-single">
+							<span class="mu-book-overview-icon-box">
+							  <i class="fa fa-users" aria-hidden="true"></i>
+							</span>
+							<h4>Capítulo 6: Liderazgo Transformador</h4>
+							<p>
+							  Desarrolla habilidades de liderazgo que inspiren y motiven a tu equipo hacia el éxito.
+							</p>
+						  </div>
+						</div>
+						<!-- / Book Overview Single Content -->
+		  
+						<!-- Book Overview Single Content -->
+						<div class="col-md-3 col-sm-6">
+						  <div class="mu-book-overview-single">
+							<span class="mu-book-overview-icon-box">
+							  <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+							</span>
+							<h4>Capítulo 7: Innovación y Adaptación</h4>
+							<p>
+							  Aprende a innovar y adaptarte a los cambios del mercado para mantenerte a la vanguardia.
+							</p>
+						  </div>
+						</div>
+						<!-- / Book Overview Single Content -->
+		  
+						<!-- Book Overview Single Content -->
+						<div class="col-md-3 col-sm-6">
+						  <div class="mu-book-overview-single">
+							<span class="mu-book-overview-icon-box">
+							  <i class="fa fa-book" aria-hidden="true"></i>
+							</span>
+							<h4>Capítulo 8: Casos de Éxito</h4>
+							<p>
+							  Estudia ejemplos reales y lecciones aprendidas de emprendedores que han dejado huella.
+							</p>
+						  </div>
+						</div>
+						<!-- / Book Overview Single Content -->
+		  
+					  </div>
+					</div>
+					<!-- End Book Overview Content -->
+		  
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		<!-- End Book Overview -->
+
+		
+
+		<!-- Start Video Review -->
+		<section id="mu-video-review">
+			<div class="container">
+			  <div class="row">
+				<div class="col-md-12">
+				  <div class="mu-video-review-area">
+		  
+					<div class="mu-heading-area">
+					  <h2 class="mu-heading-title">Vea Nuestra Reseña en Video</h2>
+					  <span class="mu-header-dot"></span>
+					  <p>
+						Descubre en este video una reseña completa y honesta de "La Fórmula para Emprender". 
+						Conoce las estrategias y consejos prácticos que Daniel Bonifaz comparte para transformar tu visión emprendedora.
+					  </p>
+					</div>
+		  
+					<!-- Start Video Review Content -->
+					<div class="mu-video-review-content">
+					  <iframe class="mu-video-iframe" width="100%" height="480" src="https://www.youtube.com/embed/612H0TVT0dg" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<!-- End Video Review Content -->
+		  
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		<!-- End Video Review -->
+
+		<!-- Start Author -->
+		<section id="mu-author">
+			<div class="container">
+			  <div class="row">
+				<div class="col-md-12">
+				  <div class="mu-author-area">
+		  
+					<div class="mu-heading-area">
+					  <h2 class="mu-heading-title">Sobre el Autor</h2>
+					  <span class="mu-header-dot"></span>
+					</div>
+		  
+					<!-- Start Author Content -->
+					<div class="mu-author-content">
+					  <div class="row">
+						<div class="col-md-6">
+						  <div class="mu-author-image">
+							<img src="assets/images/author.jpg" alt="Imagen del Autor">
+						  </div>
+						</div>
+						<div class="col-md-6">
+						  <div class="mu-author-info">
+							<h3>Daniel Bonifaz Zegarra</h3>
+							<p>
+								Bachiller en Comunicaciones e Imagen Empresarial por la UPC, TedX speaker, profesor y conferencista en emprendimiento e innovación.
+							</p>
+							<p>
+								Cofundador y CEO de Kambista, primera plataforma de cambio de divisas online en Perú, reconocida por Forbes. Socio de My Good Week y Flip, iniciativas sobre gestión del tiempo e inversión. Creador de contenido y líder en el ecosistema emprendedor latinoamericano, reconocido por Bloomberg como uno de los 100 innovadores más destacados en 2021 y 2022. 
+							</p>
+							<img class="mu-author-sign" src="assets/images/author-signature.png" alt="Firma del Autor">
+							<div class="mu-author-social">
+							  <a href="#"><i class="fa fa-facebook"></i></a>
+							  <a href="#"><i class="fa fa-twitter"></i></a>
+							  <a href="#"><i class="fa fa-linkedin"></i></a>
+							  <a href="#"><i class="fa fa-google-plus"></i></a>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+					<!-- End Author Content -->
+		  
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		<!-- End Author -->
+
+		<!-- Start Pricing -->
+		<section id="mu-pricing">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-pricing-area">
+		
+							<div class="mu-heading-area">
+								<h2 class="mu-heading-title">Nuestros Planes de Precios</h2>
+								<span class="mu-header-dot"></span>
+								<p>Elige el formato que mejor se adapte a tus necesidades y comienza tu camino con "La fórmula para emprender" de Daniel Bonifaz Zegarra.</p>
+							</div>
+		
+							<!-- Start Pricing Content -->
+							<div class="mu-pricing-content">
+								<div class="row">
+		
+									<!-- Pricing Single Content -->
+									<div class="col-sm-6 col-md-4">
+										<div class="mu-pricing-single">
+		
+											<div class="mu-pricing-single-head">
+												<h4>Edición Impresa</h4>
+												<p class="mu-price-tag">
+													<span>S/</span> 49.90
+												</p>
+											</div>
+		
+											<ul class="mu-price-feature">
+												<li>Disponible en Librería SUR, Tai Loy y Labrys.</li>
+												<li>Edición impresa de alta calidad.</li>
+											</ul>
+		
+											<div class="mu-pricing-single-footer">
+												<a href="https://www.libreriasur.com.pe/libro/la-formula-para-emprender_168055" class="mu-order-btn" target="_blank">Comprar Ahora</a>
+											</div>
+		
+										</div>
+									</div>
+									<!-- / Pricing Single Content -->
+		
+									<!-- Pricing Single Content -->
+									<div class="col-sm-6 col-md-4">
+										<div class="mu-pricing-single mu-popular-price-tag">
+		
+											<div class="mu-pricing-single-head">
+												<h4>E-Book</h4>
+												<p class="mu-price-tag">
+													<span>€</span> 6.49
+												</p>
+											</div>
+		
+											<ul class="mu-price-feature">
+												<li>Disponible en Amazon Kindle y PocketBook.</li>
+												<li>Léelo en cualquier momento y lugar.</li>
+											</ul>
+		
+											<div class="mu-pricing-single-footer">
+												<a href="https://pocketbook.es/la-formula-para-emprender-9786124327865" class="mu-order-btn" target="_blank">Comprar Ahora</a>
+											</div>
+		
+										</div>
+									</div>
+									<!-- / Pricing Single Content -->
+		
+									<!-- Pricing Single Content -->
+									<div class="col-sm-6 col-md-4">
+										<div class="mu-pricing-single">
+		
+											<div class="mu-pricing-single-head">
+												<h4>Audiolibro</h4>
+												<p class="mu-price-tag">
+													<span>$</span> 16.93
+												</p>
+											</div>
+		
+											<ul class="mu-price-feature">
+												<li>Disponible en Audible.</li>
+												<li>Narrado por Juan Balvín.</li>
+												<li>Duración: 5 horas y 22 minutos.</li>
+											</ul>
+		
+											<div class="mu-pricing-single-footer">
+												<a href="https://origin-www.audible.com.br/es_US/newreleases?feature_six_browse-bin=18685592011&amp;feature_six_browse-bin=18685609011&amp;node=18572080011&amp;publication_date=20241011-20241108&amp;sort=title-desc-rank" class="mu-order-btn" target="_blank">Comprar Ahora</a>
+											</div>
+		
+										</div>
+									</div>
+									<!-- / Pricing Single Content -->
+		
+								</div>
+							</div>
+							<!-- End Pricing Content -->
+		
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Pricing -->
+
+		<!-- Start Testimonials -->
+		<section id="mu-testimonials">
+			<div class="container">
+			  <div class="row">
+				<div class="col-md-12">
+				  <div class="mu-testimonials-area">
+					<div class="mu-heading-area">
+					  <h2 class="mu-heading-title">Lo que dicen nuestros lectores</h2>
+					  <span class="mu-header-dot"></span>
+					</div>
+		  
+					<div class="mu-testimonials-block">
+					  <ul class="mu-testimonial-slide">
+		  
+						<li>
+						  <p>
+							"Este libro es una guía indispensable para todo emprendedor. Gracias a 'La Fórmula para Emprender' encontré el coraje para iniciar mi propio negocio."
+						  </p>
+						  <img class="mu-rt-img" src="assets/images/reader-1.jpg" alt="Testimonio">
+						  <h5 class="mu-rt-name"> - Mariana Zavi</h5>
+						  <span class="mu-rt-title">Emprendedora</span>
+						</li>
+		  
+						<li>
+						  <p>
+							"Con consejos claros y ejemplos prácticos, Daniel Bonifaz me mostró el camino para superar obstáculos y crecer. ¡Una lectura obligada para futuros emprendedores!"
+						  </p>
+						  <img class="mu-rt-img" src="assets/images/reader-2.jpg" alt="Testimonio">
+						  <h5 class="mu-rt-name"> - Juan Pérez</h5>
+						  <span class="mu-rt-title">Consultor de Negocios</span>
+						</li>
+		  
+						<li>
+						  <p>
+							"Cada capítulo me brindó ideas aplicables a mi realidad empresarial. Este libro me inspiró a tomar acción y transformar mi visión en un proyecto real."
+						  </p>
+						  <img class="mu-rt-img" src="assets/images/reader-3.jpg" alt="Testimonio">
+						  <h5 class="mu-rt-name"> - Laura Martínez</h5>
+						  <span class="mu-rt-title">Emprendedora Digital</span>
+						</li>
+		  
+					  </ul>
+					</div>
+		  
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		<!-- End Testimonials -->
+
+	
+		<!-- Start Contact -->
+		<section id="mu-contact">
+			<div class="container">
+			  <div class="row">
+				<div class="col-md-12">
+				  <div class="mu-contact-area">
+		  
+					<div class="mu-heading-area">
+					  <h2 class="mu-heading-title">Envíanos un Mensaje</h2>
+					  <span class="mu-header-dot"></span>
+					  <p>
+						Si tienes alguna pregunta o comentario sobre "La Fórmula para Emprender", completa el siguiente formulario y nos pondremos en contacto contigo.
+					  </p>
+					</div>
+		  
+					<!-- Start Contact Content -->
+					<div class="mu-contact-content">
+					  <!-- Aquí se mostrarán los mensajes de respuesta (esto se muestra solo si no se redirige) -->
+					  <div id="form-messages"></div>
+		  
+					  <!-- Formulario de contacto utilizando FormSubmit -->
+					  <!-- Reemplaza "tu-correo@ejemplo.com" con el correo del vendedor -->
+					  <form id="ajax-contact" method="POST" action="https://formsubmit.co/jhordanmallma4@gmail.com" class="mu-contact-form">
+						<!-- Configuración para FormSubmit -->
+						<input type="hidden" name="_subject" value="Nuevo mensaje de contacto">
+						<input type="hidden" name="_captcha" value="false">
+						<!-- Campo para auto respuesta -->
+						<input type="hidden" name="_autoresponse" value="¡Gracias por contactarnos! Hemos recibido tu mensaje. Mientras tanto, disfruta este fragmento exclusivo de 'La Fórmula para Emprender': 'El éxito no es la clave de la felicidad. La felicidad es la clave del éxito.' Descarga la muestra completa aquí: https://example.com/muestra">
+						<!-- Indicar a FormSubmit qué campo usar para el correo del usuario -->
+						<!--<input type="hidden" name="_replyto" value="email"> -->
+						<!-- No se usa _next para permitir que FormSubmit maneje la redirección de forma natural -->
+		  
+						<div class="form-group">                
+						  <input type="text" class="form-control" placeholder="Nombre" id="name" name="name" required>
+						</div>
+						<div class="form-group">                
+						  <input type="email" class="form-control" placeholder="Correo Electrónico" id="email" name="email" required>
+						</div>              
+						<div class="form-group">
+						  <textarea class="form-control" placeholder="Mensaje" id="message" name="message" required></textarea>
+						</div>
+						<button type="submit" class="mu-send-msg-btn"><span>Enviar</span></button>
+					  </form>
+		  
+					</div>
+					<!-- End Contact Content -->
+		  
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		<!-- End Contact -->
+
+		<!-- Start Google Map -->
+		<section id="mu-google-map">
+			<iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.668901133116!2d-77.1167234!3d-11.997396899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cdcd21fe6361%3A0x7ef47cf821d1a14d!2sAv.%20Canada%2C%20Callao%2007031!5e0!3m2!1ses!2spe!4v1742945455577!5m2!1ses!2spe" 
+    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+		</section>
+		<!-- End Google Map -->
+
+	</main>
+	
+	<!-- End main content -->	
+			
+			
+	<!-- Start footer -->
+	<footer id="mu-footer" role="contentinfo">
+		<div class="container">
+		  <div class="mu-footer-area">
+			<div class="mu-social-media">
+			  <a href="https://www.facebook.com/tuPagina"><i class="fa fa-facebook"></i></a>
+			  <a href="https://twitter.com/tuPerfil"><i class="fa fa-twitter"></i></a>
+			  <a href="https://plus.google.com/tuPerfil"><i class="fa fa-google-plus"></i></a>
+			  <a href="https://www.linkedin.com/in/tuPerfil"><i class="fa fa-linkedin"></i></a>
+			</div>
+			<p class="mu-copyright">
+			  &copy; 2025 La Fórmula para Emprender. Todos los derechos reservados.
+			</p>
+		  </div>
+		</div>
+	  </footer>
+	  
+	<!-- End footer -->
+
+	
+	
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+	<!-- Slick slider -->
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <!-- Counter js -->
+    <script type="text/javascript" src="assets/js/counter.js"></script>
+    <!-- Ajax contact form  -->
+   <!-- <script type="text/javascript" src="assets/js/app.js"></script> -->
+
+   
+    <!-- Custom js -->
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+
+	 <!-- Scripts para modal y PayPal -->
+	 <script>
+		// Abrir y cerrar el modal
+		const modal = document.getElementById('paymentModal');
+		const openModalBtn = document.getElementById('openModal');
+		const closeModalSpan = document.querySelector('.modal-content .close');
+	
+		openModalBtn.addEventListener('click', function(e) {
+		  e.preventDefault();
+		  modal.style.display = 'block';
+		});
+	
+		closeModalSpan.addEventListener('click', function() {
+		  modal.style.display = 'none';
+		});
+	
+		window.addEventListener('click', function(event) {
+		  if (event.target === modal) {
+			modal.style.display = 'none';
+		  }
+		});
+	
+		// Configuración e integración de PayPal Smart Payment Buttons
+		paypal.Buttons({
+		  createOrder: function(data, actions) {
+			return actions.order.create({
+			  purchase_units: [{
+				amount: {
+				  value: '49.90' // Ajusta el monto según necesites
+				}
+			  }]
+			});
+		  },
+		  onApprove: function(data, actions) {
+			return actions.order.capture().then(function(details) {
+			  alert('Pago completado por ' + details.payer.name.given_name);
+			  modal.style.display = 'none';
+			  // Puedes redirigir o realizar otras acciones aquí
+			});
+		  },
+		  onError: function (err) {
+			console.error(err);
+			alert('Ocurrió un error durante el pago.');
+		  }
+		}).render('#paypal-button-container');
+	  </script>
+		
+		
+  </body>
+</html>
