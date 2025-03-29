@@ -58,7 +58,7 @@
 						</button>
 	
 						<!-- Text Logo -->
-						<a class="navbar-brand" href="index.html"><i class="fa fa-book" aria-hidden="true"></i> Kindle</a>
+						<a class="navbar-brand" href="index.html"><i class="fa fa-book" aria-hidden="true"></i>Nobibook</a>
 	
 						<!-- Image Logo -->
 						<!-- <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"></a> -->
@@ -96,7 +96,7 @@
 			  <div class="mu-hero-left">
 				<h1>Descubre "La Fórmula para Emprender"</h1>
 				<p>Transforma tu idea en un negocio exitoso con las estrategias y consejos prácticos de Daniel Bonifaz. Aprende a emprender con éxito paso a paso y alcanza tus metas.</p>
-				<!-- Botón que abre el modal -->
+				<!-- Botón que abre el modal global -->
 				<a href="#" id="openModal" class="mu-primary-btn">Comprar ahora</a>
 				<span>*Disponible en PDF, ePUB, Mobi & Kindle.</span>
 			  </div>
@@ -104,24 +104,27 @@
 		  </div>
 		</div>
 	  </section>
+	  
 
-	  <!-- Modal personalizado -->
-  <div id="paymentModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2 style="font-family: 'Lato', sans-serif;">Completa tu pago</h2>
-      <!-- Contenedor para el botón de PayPal -->
-      <div id="paypal-button-container"></div>
-      <!-- Sección para contacto vía WhatsApp -->
-      <div class="modal-buttons">
-        <p>¿Tienes dudas? Contáctanos vía WhatsApp:</p>
-        <!-- Asegúrate de reemplazar el número y mensaje por los tuyos (sin el símbolo +) -->
-        <a href="https://wa.me/51923433973?text=Hola,%20estoy%20interesado%20en%20tu%20producto" target="_blank" class="whatsapp-btn">
-          Contactar por WhatsApp
-        </a>
-      </div>
-    </div>
-  </div>
+	  <!-- Modal global reutilizable -->
+      <div id="paymentModal" class="modal">
+		<div class="modal-content">
+		  <span class="close">&times;</span>
+		  <!-- Título del modal se actualizará según el producto -->
+		  <h2 id="modalTitle" style="font-family: 'Lato', sans-serif;">Completa tu pago</h2>
+		  <!-- Información del producto -->
+		  <p id="modalInfo"></p>
+		  <!-- Contenedor para el botón de PayPal -->
+		  <div id="paypal-button-container"></div>
+		  <!-- Botón para contactar por WhatsApp -->
+		  <div class="modal-buttons">
+			<p>¿Tienes dudas? Contáctanos vía WhatsApp:</p>
+			<a href="https://wa.me/51923433973?text=Hola,%20estoy%20interesado%20en%20tu%20producto" target="_blank" class="whatsapp-btn">
+			  Contactar por WhatsApp
+			</a>
+		  </div>
+		</div>
+	  </div>
 	
 	<!-- End Featured Slider -->
 	
@@ -322,7 +325,7 @@
 					  </div>
 					</div>
 					<!-- End Book Overview Content -->
-		  
+
 				  </div>
 				</div>
 			  </div>
@@ -413,102 +416,89 @@
 		<!-- Start Pricing -->
 		<section id="mu-pricing">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="mu-pricing-area">
-		
-							<div class="mu-heading-area">
-								<h2 class="mu-heading-title">Nuestros Planes de Precios</h2>
-								<span class="mu-header-dot"></span>
-								<p>Elige el formato que mejor se adapte a tus necesidades y comienza tu camino con "La fórmula para emprender" de Daniel Bonifaz Zegarra.</p>
-							</div>
-		
-							<!-- Start Pricing Content -->
-							<div class="mu-pricing-content">
-								<div class="row">
-		
-									<!-- Pricing Single Content -->
-									<div class="col-sm-6 col-md-4">
-										<div class="mu-pricing-single">
-		
-											<div class="mu-pricing-single-head">
-												<h4>Edición Impresa</h4>
-												<p class="mu-price-tag">
-													<span>S/</span> 49.90
-												</p>
-											</div>
-		
-											<ul class="mu-price-feature">
-												<li>Disponible en Librería SUR, Tai Loy y Labrys.</li>
-												<li>Edición impresa de alta calidad.</li>
-											</ul>
-		
-											<div class="mu-pricing-single-footer">
-												<a href="https://www.libreriasur.com.pe/libro/la-formula-para-emprender_168055" class="mu-order-btn" target="_blank">Comprar Ahora</a>
-											</div>
-		
-										</div>
-									</div>
-									<!-- / Pricing Single Content -->
-		
-									<!-- Pricing Single Content -->
-									<div class="col-sm-6 col-md-4">
-										<div class="mu-pricing-single mu-popular-price-tag">
-		
-											<div class="mu-pricing-single-head">
-												<h4>E-Book</h4>
-												<p class="mu-price-tag">
-													<span>€</span> 6.49
-												</p>
-											</div>
-		
-											<ul class="mu-price-feature">
-												<li>Disponible en Amazon Kindle y PocketBook.</li>
-												<li>Léelo en cualquier momento y lugar.</li>
-											</ul>
-		
-											<div class="mu-pricing-single-footer">
-												<a href="https://pocketbook.es/la-formula-para-emprender-9786124327865" class="mu-order-btn" target="_blank">Comprar Ahora</a>
-											</div>
-		
-										</div>
-									</div>
-									<!-- / Pricing Single Content -->
-		
-									<!-- Pricing Single Content -->
-									<div class="col-sm-6 col-md-4">
-										<div class="mu-pricing-single">
-		
-											<div class="mu-pricing-single-head">
-												<h4>Audiolibro</h4>
-												<p class="mu-price-tag">
-													<span>$</span> 16.93
-												</p>
-											</div>
-		
-											<ul class="mu-price-feature">
-												<li>Disponible en Audible.</li>
-												<li>Narrado por Juan Balvín.</li>
-												<li>Duración: 5 horas y 22 minutos.</li>
-											</ul>
-		
-											<div class="mu-pricing-single-footer">
-												<a href="https://origin-www.audible.com.br/es_US/newreleases?feature_six_browse-bin=18685592011&amp;feature_six_browse-bin=18685609011&amp;node=18572080011&amp;publication_date=20241011-20241108&amp;sort=title-desc-rank" class="mu-order-btn" target="_blank">Comprar Ahora</a>
-											</div>
-		
-										</div>
-									</div>
-									<!-- / Pricing Single Content -->
-		
-								</div>
-							</div>
-							<!-- End Pricing Content -->
-		
-						</div>
+			  <div class="row">
+				<div class="col-md-12">
+				  <div class="mu-pricing-area">
+					<div class="mu-heading-area">
+					  <h2 class="mu-heading-title">Nuestros Planes de Precios</h2>
+					  <span class="mu-header-dot"></span>
+					  <p>Elige el formato que mejor se adapte a tus necesidades y comienza tu camino con "La fórmula para emprender" de Daniel Bonifaz Zegarra.</p>
 					</div>
+					<!-- Start Pricing Content -->
+					<div class="mu-pricing-content">
+					  <div class="row">
+						<!-- Producto 1: Edición Impresa -->
+						<div class="col-sm-6 col-md-4">
+						  <div class="mu-pricing-single">
+							<div class="mu-pricing-single-head">
+							  <h4>Edición Impresa</h4>
+							  <p class="mu-price-tag"><span>$</span> 49.90</p>
+							</div>
+							<ul class="mu-price-feature">
+							  <li>Disponible en Librería SUR, Tai Loy y Labrys.</li>
+							  <li>Edición impresa de alta calidad.</li>
+							</ul>
+							<div class="mu-pricing-single-footer">
+							  <a href="#" class="mu-order-btn" 
+								 data-product="Edición Impresa" 
+								 data-price="49.90" 
+								 data-currency="USD">
+								 Comprar Ahora
+							  </a>
+							</div>
+						  </div>
+						</div>
+						<!-- Producto 2: E-Book -->
+						<div class="col-sm-6 col-md-4">
+						  <div class="mu-pricing-single mu-popular-price-tag">
+							<div class="mu-pricing-single-head">
+							  <h4>E-Book</h4>
+							  <p class="mu-price-tag"><span>$</span> 6.49</p>
+							</div>
+							<ul class="mu-price-feature">
+							  <li>Disponible en Amazon Kindle y PocketBook.</li>
+							  <li>Léelo en cualquier momento y lugar.</li>
+							</ul>
+							<div class="mu-pricing-single-footer">
+							  <a href="#" class="mu-order-btn" 
+								 data-product="E-Book" 
+								 data-price="6.49" 
+								 data-currency="USD">
+								 Comprar Ahora
+							  </a>
+							</div>
+						  </div>
+						</div>
+						<!-- Producto 3: Audiolibro -->
+						<div class="col-sm-6 col-md-4">
+						  <div class="mu-pricing-single">
+							<div class="mu-pricing-single-head">
+							  <h4>Audiolibro</h4>
+							  <p class="mu-price-tag"><span>$</span> 14.95</p>
+							</div>
+							<ul class="mu-price-feature">
+							  <li>Disponible en Audible.</li>
+							  <li>Narrado por Juan Balvín.</li>
+							  <li>Duración: 5 horas y 22 minutos.</li>
+							</ul>
+							<div class="mu-pricing-single-footer">
+							  <a href="#" class="mu-order-btn" 
+								 data-product="Audiolibro" 
+								 data-price="14.95" 
+								 data-currency="USD">
+								 Comprar Ahora
+							  </a>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+					<!-- End Pricing Content -->
+				  </div>
 				</div>
+			  </div>
 			</div>
-		</section>
+		  </section>
 		<!-- End Pricing -->
 
 		<!-- Start Testimonials -->
