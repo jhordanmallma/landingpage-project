@@ -190,7 +190,7 @@
 	   // Configuración del producto para la sección hero (puedes modificar estos valores)
 	   const productHero = {
 		 name: 'La Fórmula para Emprender',
-		 price: '9.99',
+		 price: '22.99',
 		 currency: 'USD'
 	   };
 	   openPaymentModal(productHero);
