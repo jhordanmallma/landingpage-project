@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Kindle : Home</title>
+    <title>Nobibook : Inicio</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
     <!-- Font Awesome -->
@@ -28,12 +28,10 @@
   	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
 
 	<!-- Carga el SDK de PayPal en modo Sandbox (reemplaza TU_CLIENT_ID_SANDBOX por tu Client ID real) -->
-	<script src="https://www.paypal.com/sdk/js?client-id=AdQ6v2KlZJht28KYXYdMGZjB4eFITfvju8M11WB5ePQoOsykC8qm1qI2S2yWonhWENVXA4mdfRfLizqb&currency=USD"></script>
+	<script src="https://www.paypal.com/sdk/js?client-id=AcKqQOrn7fsDaOwEl0pMZNkHWyucjYTSHJZj8Orc0SJDSNsrA3sD3Q3l2FUQPKosbxe8OfQV8ciV8gsQ&currency=USD"></script>
  
  
- 
- 
-	
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -112,16 +110,17 @@
       <div id="paymentModal" class="modal">
 		<div class="modal-content">
 		  <span class="close">&times;</span>
-		  <!-- Título del modal se actualizará según el producto -->
 		  <h2 id="modalTitle" style="font-family: 'Lato', sans-serif;">Completa tu pago</h2>
-		  <!-- Información del producto -->
 		  <p id="modalInfo"></p>
-		  <!-- Contenedor para el botón de PayPal -->
 		  <div id="paypal-button-container"></div>
-		  <!-- Botón para contactar por WhatsApp -->
+		  <!-- Enlace de descarga (inicialmente oculto) -->
+		  <div id="download-link-container" style="display: none;">
+			<p>¡Gracias por tu compra! Haz clic en el siguiente enlace para descargar tu eBook:</p>
+			<a href="ruta/a/tu/ebook.pdf" target="_blank" class="download-link">Descargar eBook</a>
+		  </div>
 		  <div class="modal-buttons">
 			<p>¿Tienes dudas? Contáctanos vía WhatsApp:</p>
-			<a href="https://wa.me/51923433973?text=Hola,%20estoy%20interesado%20en%20tu%20producto" target="_blank" class="whatsapp-btn">
+			<a href="https://wa.me/51912653526?text=Hola,%20estoy%20interesado%20en%20tu%20producto" target="_blank" class="whatsapp-btn">
 			  Contactar por WhatsApp
 			</a>
 		  </div>
